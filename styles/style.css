@@ -574,8 +574,8 @@ footer li{
     padding: 2%;
     display: grid;
     gap: 2vmax;
-    border-radius: 1.5vmin;
     grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 1.5vmin;
 
     & .item {
       position: relative;
