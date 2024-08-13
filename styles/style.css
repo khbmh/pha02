@@ -588,14 +588,15 @@ footer li {
       background-repeat: no-repeat;
       background-size: cover;
 
-      & .text{
+      & .text {
         /* background-color: #0000005c; */
         position: absolute;
         width: 100%;
         bottom: 0;
         left: 0;
         padding: 0 5%;
-        & h3{
+
+        & h3 {
           margin-bottom: -1vmax;
         }
 
@@ -630,9 +631,10 @@ footer li {
 }
 
 #price-table {
-  margin-top: 5vmax;
-  margin: auto;
+  margin: 3vmax auto;
+  margin-bottom: 1vmax;
   width: 80%;
+  padding: 1vmax 0 5vmax 0;
 
   & h1 {
     text-align: center;
@@ -644,29 +646,86 @@ footer li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-& .item{
-  /* background-color: wheat; */
-  border: 1px solid #cccccc5a;
-  border-radius: 1vmax;
-  padding: 3vmax 3.5vmax;
-  & h3 {
-    text-align: center;
-    margin: 2vmax auto;
-  }
-  & P{
-    text-align: left;
-  }
-& span{
-background-color: var(--red);
-padding: 1vmax .6vmax;
-position: relative;
-border: none;
-border-radius: 33vmax;
-}
-}
+
+    & .item {
+      /* background-color: wheat; */
+      border: 1px solid #cccccc5a;
+      border-radius: 1vmax;
+      padding: 3vmax 3.5vmax;
+
+      & h3 {
+        text-align: center;
+        margin: 2vmax auto;
+      }
+
+      & .text {
+        margin-bottom: 2.2vmax;
+        text-align: left;
+      }
+
+      & span {
+        background-color: var(--red);
+        padding: 1vmax .6vmax;
+        position: relative;
+        border: none;
+        border-radius: 33vmax;
+      }
+    }
   }
 }
 
+footer {
+  width: 80%;
+  height: fit-content;
+  margin: 1vmax auto;
+  padding: 0 0 1vmax 0;
+
+  & .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+
+    & .start {
+      & .one {
+        & #footer-logo {
+          color: var(--red);
+          font-weight: 800;
+          font-style: italic;
+          font-size: 4.5vmax;
+          line-height: 3vmax;
+        }
+
+        & p {
+          width: 80%;
+          letter-spacing: 1px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    & .mid,
+    .end {
+      & h1 {
+        margin-bottom: 2vmax;
+      }
+
+      & li {
+        margin-bottom: 1vmax;
+      }
+    }
+  }
+
+  & hr {
+    margin-top: 3vmax;
+    margin-bottom: 2vmax;
+    border: 1px solid #cccccc34;
+    ;
+  }
+
+  & .copyright {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 768px) {}
 
