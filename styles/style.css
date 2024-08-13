@@ -65,12 +65,14 @@ button {
   font-size: 1vmax;
   font-weight: bold;
 }
-footer li{
+
+footer li {
   list-style: none;
   color: #FFFFFF80;
   font-size: 1.2vmax;
   letter-spacing: 1;
 }
+
 /* special styles */
 #shape {
   font-family: "Italianno", cursive;
@@ -585,30 +587,85 @@ footer li{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+
+      & .text{
+        /* background-color: #0000005c; */
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 0 5%;
+        & h3{
+          margin-bottom: -1vmax;
+        }
+
+      }
     }
-    & .item1{
+
+    & .item1 {
       background-image: url('../images/trainer1.png');
     }
-    & .item2{
+
+    & .item2 {
       background-image: url('../images/trainer2.png');
     }
-    & .item3{
+
+    & .item3 {
       background-image: url('../images/trainer3.png');
     }
-    & .item4{
+
+    & .item4 {
       background-image: url('../images/trainer4.png');
     }
-    & .item5{
+
+    & .item5 {
       background-image: url('../images/trainer5.png');
     }
-    & .item6{
+
+    & .item6 {
       background-image: url('../images/trainer6.png');
     }
-   
+
   }
 }
 
+#price-table {
+  margin-top: 5vmax;
+  margin: auto;
+  width: 80%;
 
+  & h1 {
+    text-align: center;
+    margin: 3vmax auto;
+  }
+
+  & .pricing {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+& .item{
+  /* background-color: wheat; */
+  border: 1px solid #cccccc5a;
+  border-radius: 1vmax;
+  padding: 3vmax 3.5vmax;
+  & h3 {
+    text-align: center;
+    margin: 2vmax auto;
+  }
+  & P{
+    text-align: left;
+  }
+& span{
+background-color: var(--red);
+padding: 1vmax .6vmax;
+position: relative;
+border: none;
+border-radius: 33vmax;
+}
+}
+  }
+}
 
 
 @media screen and (max-width: 768px) {}
