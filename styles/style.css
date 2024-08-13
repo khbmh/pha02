@@ -778,10 +778,10 @@ footer {
     background-color: var(--red);
     color: #fff;
     cursor: pointer;
-    padding: 2vmax 3.5vmax;
+    padding: 2vmax 2.8vmax;
     border: none;
     border-radius: 5vh;
-    font-size: 2vmax;
+    font-size: 1.8vmax;
     font-weight: bold;
   }
 
@@ -934,7 +934,7 @@ footer {
             font-size: 3.8vmax;
             margin: 0 auto;
             line-height: 3vmax;
-    
+
           }
 
           & p {
@@ -1018,7 +1018,8 @@ footer {
       & .sm-font {
         text-align: left;
       }
-      & .join-btn{
+
+      & .join-btn {
         display: block;
         width: 85%;
         margin: 0vh auto 4vh 3.5%;
@@ -1027,7 +1028,7 @@ footer {
 
     & img {
       border-radius: 1vmax;
-      width: 90vmin;
+      width: 80vmin;
       height: 50vmin;
       object-fit: cover;
 
@@ -1040,12 +1041,8 @@ footer {
     margin-bottom: 10vh;
     padding: 2%;
 
-    & .headings {
+    & .headings, .sm-font  {
       margin-left: 7%;
-      text-align: left;
-    }
-
-    & .sm-font {
       text-align: left;
     }
 
@@ -1229,6 +1226,7 @@ footer {
       width: 110% !important;
       max-width: 1440;
       padding: 4% 10%;
+      padding-bottom: 3vh;
       background-color: #222222;
       display: flex;
       flex-direction: column;
@@ -1244,12 +1242,12 @@ footer {
           & td {
             border: 1px solid #ffffff43;
             padding: 1vmax 2vmax;
-            font-size: 2vmax;
+            font-size: 1.5vmax;
             font-weight: 200;
             color: #FFFFFF80;
 
             & b {
-              font-size: 2vmax;
+              font-size: 1.5vmax;
               font-weight: 400;
             }
           }
@@ -1261,14 +1259,14 @@ footer {
 
         & .input {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: .5fr .5fr;
           gap: 2vmin;
 
           & input,
           select {
             padding: 2vmax 2vmax;
             color: #FFFFFF99;
-            font-size: 1.5vmax;
+            font-size: 1vmax;
             background-color: #FFFFFF1A;
             border: none;
             border-radius: 1.2vmin;
